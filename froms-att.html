@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms with attributes</title>
+</head>
+
+<body>
+    <form id="Regstration" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend> Personal Detail</legend>
+            <table>
+                <caption style="font-size: xx-large;">Regstration Form</caption>
+                <tr>
+                    <td> First Name:</td>
+                    <td>
+                        <input type="text" name="fname" autofocus required />
+                    </td>
+                <tr>
+                    <br>
+                    <td>Last Name:</td>
+                    <td>
+                        <input type="text" name="lname" placeholder="Last Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td>
+                        <input type="date" name="dob" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <select name="gender" id="">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Photo</td>
+                    <td>
+                        <input type="file" name="Aadhar" id="">
+                    </td>
+                </tr>
+                <!-- <tr style="display: grid;", align=""> -->
+                <tr style="align-items: end;">
+
+                    <td></td>
+                    <td></td>
+                    <td style="display: grid;"><input type="submit" /></td>
+                </tr>
+
+        </fieldset>
+    </form>
+    </table>
+    <br>
+    <fieldset>
+        <legend> Educational Detail</legend>
+        <table>
+            <tr>
+                <td>
+                    <select name="" id="">
+                        <option value="">BA</option>
+                        <option value="">Bcom</option>
+                        <option value="">MBA</option>
+                        <option value="">PhD</option>
+                    </select>
+                </td>
+            </tr>
+    </fieldset>
+    </table>
+    <form method="post">
+        <fieldset>
+            <legend>placeholder, value, readonly</legend>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" value="K. Sekhar"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Enter Your Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Animal</td>
+                    <td><input type="text" value="cat" readonly></td>
+                </tr>
+            </table>
+            <tr style="align-items: end;">
+
+                <td></td>
+                <td></td>
+                <td style="display: grid;"><input type="submit" /></td>
+            </tr>
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>Desable, width, char, max and min , number min-max and step Range </legend>
+        Disable<input type="text" name="food" value="rice" disabled>
+        width<input type="text" size="10">
+        Character <input type="text" minlength="5" maxlength="10">
+        <br>
+        Number <input type="number" min="5" max="25" step="10">
+    </fieldset>
+</body>
+<style>
+    table {
+        border: 1px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    tr {
+        padding: 8px;
+        border: 1px solid #ddd;
+        margin: 10px;
+    }
+
+    select,
+    input[type="text"],
+    input[type="date"] {
+        padding: 8px;
+        width: 99%;
+        box-sizing: border-box;
+        margin: 10px;
+
+    }
+</style>
+
+</html>
