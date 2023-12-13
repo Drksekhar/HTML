@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions - static, Relative, Absolute, Fixed</title>
+</head>
+
+<body>
+    <h3 style="text-align: center;">Static Position</h3>
+    <hr>
+    <div id="statP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia, temporibus magni ex
+        corrupti minima
+        suscipit culpa, dicta iste error quis explicabo in? Numquam pariatur ad ea nulla, ipsa quos!</div>
+    <br>
+    <hr>
+    <h2 style="text-align: center;">Positining the eye symbol with in the input box by using the - relative positio and
+        right margin</h2>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            First Name:<input type="text" name="fname" placeholder="Enter Your First Name">
+            <br>
+            Last Name:<input type="text" name="lname" placeholder="Enter Your Last Name">
+            <br>
+            DOB:<input type="date" name="dob" placeholder="Enter Your Date of Birth">
+            <br>
+            Gender:
+            <select>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select><br>
+            Password: <input type="password">
+            <span id="eye">0</span>
+            <button id="btn1">SUBMIT</button>
+            <br>
+
+        </fieldset>
+    </form>
+    <br>
+    <!-- <button id="btn1">SUBMIT</button> -->
+    <h3 style="text-align: center;">Absolute and Relative Positions</h3>
+    <div id="parent">
+        <button id="btn2">CLOSE</button>
+        <p> ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae dolorum est quisquam
+            commodi numquam ratione corrupti, velit nesciunt similique consectetur voluptatem, quaerat vel debitis iste!
+            Quia in earum nisi!</p>
+    </div>
+    <div id="child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt rem consequatur quaerat!
+        Esse repellat consequuntur, sint ad minima non cum error, reiciendis recusandae nam voluptate saepe facere
+        voluptas vel.</div>
+
+</body>
+<style>
+    #btn2 {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        background-color: limegreen;
+        border: solid 2px;
+    }
+
+    #parent {
+        position: relative;
+        background-color: orangered;
+        line-height: 25px;
+        width: 500px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border: solid 2px color(srgb red green blue)
+    }
+
+    #btn1 {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        /* left: 10px; */
+    }
+
+    input {
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    #eye {
+        position: relative;
+        right: 30px;
+    }
+
+    #statP {
+        background-color: aquamarine;
+        position: static;
+        /* height: 100px;
+        width: 800px; */
+        line-height: 30px;
+        font-family: 'Segoe UI';
+        color: blue;
+        display: inline-block;
+    }
+</style>
+
+</html>
